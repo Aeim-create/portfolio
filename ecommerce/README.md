@@ -6,7 +6,8 @@ A modern e-commerce clothing store built with Next.js and Shadcn UI.
 
 - Responsive design optimized for all devices
 - Clean and modern UI with grey and green color scheme
-- Product categories for men, women, kids, and accessories
+- Informative landing page showcasing website offerings
+- Shop page with women's clothing categories (tops, bottoms, skirts)
 - Product listings and details
 - Shopping cart functionality
 - User authentication
@@ -55,6 +56,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Project Structure
 
 - `/app` - Next.js app router pages
+  - `/app/shop` - Shop page
+  - `/app/shop/women` - Women's categories (tops, bottoms, skirts)
 - `/components` - React components
   - `/components/ui` - Shadcn UI components
   - `/components/layout` - Layout components (Navbar, Footer)

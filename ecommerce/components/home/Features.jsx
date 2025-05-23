@@ -1,28 +1,41 @@
-import { Truck, RefreshCw, ShieldCheck } from "lucide-react";
+import { Leaf, Award, Truck, ShieldCheck } from "lucide-react";
 
 const features = [
   {
-    icon: Truck,
-    title: "Free Delivery",
-    description: "Free shipping on all orders over $50",
+    icon: Leaf,
+    title: "Sustainable Materials",
+    description: "Our products are made from eco-friendly and sustainable materials",
   },
   {
-    icon: RefreshCw,
-    title: "30-Days Return",
-    description: "Easy returns within 30 days of purchase",
+    icon: Award,
+    title: "Premium Quality",
+    description: "Carefully crafted garments designed to last for years",
+  },
+  {
+    icon: Truck,
+    title: "Fast Delivery",
+    description: "Free shipping on all orders over $50 with quick delivery",
   },
   {
     icon: ShieldCheck,
-    title: "Secure Payment",
-    description: "Your payment information is always safe",
+    title: "Secure Shopping",
+    description: "Safe payment processing and data protection guaranteed",
   },
 ];
 
 export default function Features() {
   return (
-    <section className="py-12 bg-muted">
+    <section className="py-16 bg-muted">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Why Choose StyleHub</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            We're committed to providing you with the best shopping experience possible.
+            Here's what sets us apart from the rest.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}

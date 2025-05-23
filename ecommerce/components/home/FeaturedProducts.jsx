@@ -6,35 +6,35 @@ import { ShoppingCart } from "lucide-react";
 const products = [
   {
     id: 1,
-    name: "Classic White T-Shirt",
+    name: "Organic Cotton Tee",
     price: 29.99,
-    image: "/product-1.jpg",
-    category: "Men",
-    href: "/product/classic-white-t-shirt",
+    image: "/shopnowimages/top1.jpg",
+    tag: "Trending",
+    href: "/product/organic-cotton-tee",
   },
   {
     id: 2,
-    name: "Summer Floral Dress",
+    name: "Relaxed Fit Dress",
     price: 49.99,
-    image: "/product-2.jpg",
-    category: "Women",
-    href: "/product/summer-floral-dress",
+    image: "/shopnowimages/pant1.jpg",
+    tag: "Bestseller",
+    href: "/product/relaxed-fit-dress",
   },
   {
     id: 3,
-    name: "Slim Fit Jeans",
+    name: "Premium Denim Jeans",
     price: 59.99,
-    image: "/product-3.jpg",
-    category: "Men",
-    href: "/product/slim-fit-jeans",
+    image: "/shopnowimages/skirt1.jpg",
+    tag: "New Arrival",
+    href: "/product/premium-denim-jeans",
   },
   {
     id: 4,
-    name: "Kids Colorful Hoodie",
-    price: 34.99,
+    name: "Oversized Sweater",
+    price: 44.99,
     image: "/product-4.jpg",
-    category: "Kids",
-    href: "/product/kids-colorful-hoodie",
+    tag: "Limited Edition",
+    href: "/product/oversized-sweater",
   },
 ];
 
@@ -44,13 +44,13 @@ export default function FeaturedProducts() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <div>
-            <h2 className="text-3xl font-bold mb-2">Featured Products</h2>
+            <h2 className="text-3xl font-bold mb-2">Trending Now</h2>
             <p className="text-muted-foreground">
-              Our most popular products that customers love
+              Discover our most popular styles that everyone loves
             </p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0">
-            <Link href="/products">View All Products</Link>
+            <Link href="/shop">View All Products</Link>
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ export default function FeaturedProducts() {
               <Link href={product.href}>
                 <div className="aspect-square relative overflow-hidden">
                   <span className="absolute top-2 left-2 z-10 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-md">
-                    {product.category}
+                    {product.tag}
                   </span>
                   <img
                     src={product.image}

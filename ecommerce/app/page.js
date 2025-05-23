@@ -1,9 +1,11 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
-import Categories from "@/components/home/Categories";
+import Offerings from "@/components/home/Categories";
 import Features from "@/components/home/Features";
-import FeaturedProducts from "@/components/home/FeaturedProducts";
+import Testimonials from "@/components/home/Testimonials";
+import FeaturedTestimonial from "@/components/home/FeaturedTestimonial";
+import TrustBadges from "@/components/home/TrustBadges";
 import Newsletter from "@/components/home/Newsletter";
 
 export default function Home() {
@@ -12,9 +14,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <TrustBadges />
         <Features />
-        <Categories />
-        <FeaturedProducts />
+        <Offerings />
+        <FeaturedTestimonial />
+        <Testimonials />
         <Newsletter />
       </main>
       <Footer />

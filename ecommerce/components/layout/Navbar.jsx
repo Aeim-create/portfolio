@@ -2,22 +2,19 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, Search, ShoppingCart, User, X } from "lucide-react";
+import { Menu, Search, ShoppingCart, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 
-const categories = [
-  { name: "Men", href: "/category/men" },
-  { name: "Women", href: "/category/women" },
-  { name: "Kids", href: "/category/kids" },
-  { name: "Accessories", href: "/category/accessories" },
-  { name: "Sale", href: "/sale" },
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Shop Now", href: "/shop" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -27,14 +24,14 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          {categories.map((category) => (
+        <nav className="hidden md:flex items-center space-x-8">
+          {navLinks.map((link) => (
             <Link
-              key={category.name}
-              href={category.href}
+              key={link.name}
+              href={link.href}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              {category.name}
+              {link.name}
             </Link>
           ))}
         </nav>
@@ -89,13 +86,13 @@ export default function Navbar() {
                     <Search className="absolute right-3 h-4 w-4 text-muted-foreground" />
                   </form>
                   <nav className="flex flex-col space-y-3">
-                    {categories.map((category) => (
+                    {navLinks.map((link) => (
                       <Link
-                        key={category.name}
-                        href={category.href}
+                        key={link.name}
+                        href={link.href}
                         className="text-base font-medium hover:text-primary transition-colors"
                       >
-                        {category.name}
+                        {link.name}
                       </Link>
                     ))}
                   </nav>

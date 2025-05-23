@@ -8,21 +8,21 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-              Summer is Coming
+              Elevate Your Style
             </h1>
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-              Upto 80% OFF
+              Quality Fashion for Everyone
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Refresh your wardrobe with our latest summer collection. 
-              Breathable fabrics, vibrant colors, and styles for all occasions.
+              Welcome to StyleHub, your destination for premium clothing and accessories.
+              We offer curated collections with a focus on quality, style, and sustainability.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg">
-                <Link href="/category/summer">Shop Now</Link>
+                <Link href="/shop">Shop Now</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/category/new-arrivals">New Arrivals</Link>
+                <Link href="/about">Learn More</Link>
               </Button>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-accent to-transparent z-10"></div>
             <img 
               src="/hero-image.jpg" 
-              alt="Summer Collection" 
+              alt="StyleHub Fashion" 
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -40,7 +40,7 @@ export default function Hero() {
       
       <div className="absolute bottom-0 left-0 right-0 bg-primary text-primary-foreground py-3 text-center">
         <p className="text-sm md:text-base font-medium">
-          Free shipping on all orders over $50 | Easy returns within 30 days
+          Sustainable Materials | Ethical Production | Free shipping on all orders over $50
         </p>
       </div>
     </section>
